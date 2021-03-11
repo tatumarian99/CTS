@@ -1,6 +1,6 @@
 package ase.ro.solid;
 
-public class BankAccount {
+public class BankAccount implements Account {
 	private String iban;
 	private long balance;
 
@@ -14,6 +14,7 @@ public class BankAccount {
 
 
 
+	@Override
 	public void withdraw(long amount) throws InsuficientFundsException {
 		if (amount > balance)
 			throw new InsuficientFundsException("Insuficient funds " + balance);
@@ -21,6 +22,7 @@ public class BankAccount {
 		balance -= amount;
 	}
 
+	@Override
 	public void deposit(long amount) {
 		System.out.println("Adding " + amount + " to " + iban);
 		balance += amount;
