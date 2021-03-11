@@ -6,17 +6,17 @@ import java.util.Map;
 public class main {
 
 	public static void main(String[] args) {
-		Map<Person, BankAccount> employees = new HashMap <> ();
+		Map<Person, DebitBankAccount> employees = new HashMap <> ();
 		
 		//cream persoane pe care sa le adaugam in structura
 		Person p1 = new Person("Chuck Noris");
-		BankAccount b1 = new BankAccount("RF4876R8734678434", p1);
+		DebitBankAccount b1 = new DebitBankAccount("RF4876R8734678434", p1);
 		
 		Person p2 = new Person("Arnols");
-		BankAccount b2 = new FeeBankAccount("ING4876R8734678434", p2);
+		DebitBankAccount b2 = new FeeBankAccount("ING4876R8734678434", p2);
 		
 		Person p3 = new Person("Van Damme");
-		BankAccount b3 = new BankAccount("BT4876R8734678434", p3);
+		DebitBankAccount b3 = new DebitBankAccount("BT4876R8734678434", p3);
 		
 		employees.put(p1, b1);
 		employees.put(p2, b2);
