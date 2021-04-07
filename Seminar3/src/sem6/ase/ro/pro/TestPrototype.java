@@ -6,6 +6,8 @@ public class TestPrototype {
 		// TODO Auto-generated method stub
 		Model3DCaracter s1=new Model3DCaracter("Albastru");
 		Model3DCaracter s2=new Model3DCaracter("Albastru");
+		
+		
 	}
 
 }
