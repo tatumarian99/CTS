@@ -1,6 +1,7 @@
-package sem8.facade.ase.ro.adapter;
+package ro.ase.csie.cts.g1087.dp.adapter;
 
 public class DonaldDuck implements ActiuniDisney {
+
 	public static final String denumire = "Donald Duck";
 	int power;
 	
@@ -40,4 +41,12 @@ public class DonaldDuck implements ActiuniDisney {
 		System.out.println("Jump");
 		
 	}
+
+	@Override
+	public String getNume() {
+		return denumire;
+	}
+
+	
+
 }

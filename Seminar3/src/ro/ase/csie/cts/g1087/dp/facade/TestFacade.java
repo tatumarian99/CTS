@@ -1,8 +1,9 @@
-package sem8.facade.ase.ro;
+package ro.ase.csie.cts.g1087.dp.facade;
 
 public class TestFacade {
 
 	public static void main(String[] args) {
+		//fara facade
 		ServerJoc server = new ServerJoc("10.0.0.10",3306);
 		if(server.conectare()) {
 			Utilizator utilizator = new Utilizator();
@@ -10,10 +11,10 @@ public class TestFacade {
 			ProfilJucator profil = utilizator.getProfil();
 			String dateProfil = profil.getDateProfil();
 		}
-		
-		ProfilJucator profil2=APIJocFacade.getProfil("10.0.0.1", 3306, "player2", "123456");
-		String dateProfil=profil2.getDateProfil();
 
+		//cu facade 
+		ProfilJucator profil2 = APIJocFacade.getProfil("10.0.0.1", 3306, "Player 2", "12345");
+		String dateProfil2 = profil2.getDateProfil();
 	}
 
 }

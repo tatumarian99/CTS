@@ -1,6 +1,7 @@
-package sem8.facade.ase.ro.adapter;
+package ro.ase.csie.cts.g1087.dp.adapter;
 
-public class CaracterFantastic extends ACMECaracterJoc {
+public class CaracterFantastic extends ACMECaracterJoc{
+
 	public CaracterFantastic(String nume, int puncteViata) {
 		super(nume, puncteViata);
 	}
@@ -21,4 +22,5 @@ public class CaracterFantastic extends ACMECaracterJoc {
 		System.out.println(String.format("%s se vindeca si recupereaza %d puncte", nume, puncte));
 		this.puncteViata += puncte;
 	}
+
 }
